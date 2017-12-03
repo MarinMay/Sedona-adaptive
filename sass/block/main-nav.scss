@@ -60,6 +60,14 @@
   }
 }
 
+.main-nav__link--acive {
+  color: $color-active-menu;
+
+  @media screen and (min-width: $tablet-width) {
+    color: $color-active-menu;
+  }
+}
+
 .main-nav__logo-link {
   position: relative;
   z-index: 5;
