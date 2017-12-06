@@ -1,0 +1,55 @@
+.our-services {
+  padding: 35px 0;
+}
+
+.our-services__list {
+  @include list-style-reset;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+  text-align: left;
+}
+
+.our-services__item {
+  position: relative;
+  width: 83%;
+}
+
+.our-services__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+}
+
+.our-services__item--food {
+  order: 1;
+}
+
+.our-services__item--housing::before {
+  background-image: url("../img/icon-house.svg");
+}
+
+.our-services__item--food::before {
+  background-image: url("../img/icon-burger.svg");
+}
+
+.our-services__item--souvenirs::before {
+  background-image: url("../img/icon-gift.svg");
+}
+
+.our-services__title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+    }
+}

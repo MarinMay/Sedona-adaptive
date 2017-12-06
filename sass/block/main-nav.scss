@@ -7,26 +7,24 @@
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
-  color: $color-secondary;
   background-color: $color-main;
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
     line-height: 26px;
-    color: $color-title;
     background-color: $color-secondary;
   }
 }
 
+//закрытое меню
 .main-nav__list--close {
   display: none;
 }
 
 .main-nav__item {
-  padding: 8px 0 7px;
-  min-height: 55px;
+  min-height: 54px;
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
 
@@ -34,37 +32,80 @@
     border-top: none;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-main--darker;
+  }
+
+  @media (min-width: $tablet-width) {
     width: 20%;
-    padding-top: 14px;
     text-align: center;
     border: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $color-secondary;
+    }
   }
 }
 
 .main-nav__item:nth-child(4n+2) {
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-right: auto;
   }
 }
 
 .main-nav__link {
-  color: $color-secondary;
+  display: block;
+  padding: 7px 0 7px;
+  min-height: 54px;
+  color: $font-color--reverse;
 
   &:active {
-    color: $color-secondary-opacity-30;
+    color: $font-color--reverse-opacity-30;
   }
 
-  @media screen and (min-width: $tablet-width) {
-    color: $color-title;
+  @media (min-width: $tablet-width) {
+    min-height: 55px;
+    padding-top: 14px;
+    color: $font-color--title;
+
+    &:hover,
+    &:focus {
+      color: $font-color--hover;
+    }
+
+    &:active {
+      color: $font-color--down;
+    }
   }
 }
 
-.main-nav__link--acive {
-  color: $color-active-menu;
+.main-nav__link--active {
+  color: $font-color--active-menu;
 
-  @media screen and (min-width: $tablet-width) {
-    color: $color-active-menu;
+  &:hover,
+  &:focus {
+    color: $font-color--active-menu-hover;
+  }
+
+  &:active {
+    color: $font-color--active-menu-down;
+  }
+
+  @media (min-width: $tablet-width) {
+    color: $font-color--active-menu;
+
+    &:hover,
+    &:focus {
+      color: $font-color--active-menu-hover;
+    }
+
+    &:active {
+      color: $font-color--active-menu-down;
+    }
   }
 }
 
@@ -76,21 +117,22 @@
   height: 85px;
   margin: 0 auto;
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     top: 0;
     left: calc(50% - 102px / 2);
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     left: calc(50% - 187px / 2);
+    //делает логотип по центру(ширина логотипа =187/пополам)
     width: 187px;
     height: 96px;
   }
 }
 
 .main-nav__logo-link img {
-  @media screen and (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 187px;
     height: 96px;
   }

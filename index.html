@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -53,28 +53,34 @@
 
       <main class="page-main">
         <h1 class="page-main__heading">
-          Седона — небольшой городок в Аризоне, заслуживающий большего
+          Седона — небольшой городок в Аризоне, заслуживающий большего!
         </h1>
 
         <p class="page-main__description">
-          Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!
+          Рассмотрим 5 причин, по которым Седона круче чем&nbsp;гранд&nbsp;каньон!
         </p>
 
-        <section class="features">
+        <section class="features features--top">
           <h2 class="visually-hidden">Главное преимущество</h2>
 
           <div class="features__text-wrapper">
-            <h3 class="features__text-title">Настоящий городок</h3>
+            <h3 class="features__title">Настоящий городок</h3>
 
             <p class="features__text">&#8212; №1 &#8212;</p>
 
             <p class="features__text">
-              Седона &#8212; не аттракцион для туристов, там течет своя жизнь.
+              Седона не аттракцион для туристов, там течет&nbsp;своя&nbsp;жизнь
             </p>
           </div>
 
           <div class="features__photo">
-            <img src="img/main-city-mobile@1x.jpg" width="800" height="256" alt="Фото Седоны">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+
+              <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@1x.jpg 1x, main-city-mobile@2x.jpg 2x" alt="Фото Седоны">
+            </picture>
           </div>
         </section>
 
@@ -82,19 +88,19 @@
           <h2 class="visually-hidden">Сервис</h2>
 
           <ul class="our-services__list">
-            <li class="our-services__item">
+            <li class="our-services__item our-services__item--housing">
               <h3 class="our-services__title">Жилье</h3>
 
               <p class="our-services__text">Рекомедуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
 
-            <li class="our-services__item">
+            <li class="our-services__item our-services__item--food">
               <h3 class="our-services__title">Еда</h3>
 
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
 
-            <li class="our-services__item">
+            <li class="our-services__item our-services__item--souvenirs">
               <h3 class="our-services__title">Сувениры</h3>
 
               <p>Не только китайского, но и местного производства!</p>
@@ -106,15 +112,21 @@
           <h2 class="visually-hidden">Главное преимущество №2</h2>
 
           <div class="features__text-wrapper">
-            <h3 class="features__text-title">Там есть<br> мост Дьявола</h3>
+            <h3 class="features__title">Там есть<br> мост Дьявола</h3>
 
             <p class="features__text">&#8212; №2 &#8212;</p>
 
-            <p class="features__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <p class="features__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
 
           <div class="features__photo">
-            <img src="img/main-bridge-mobile@1x.jpg" width="800" height="256" alt="Фото моста Дьявола">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+
+              <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@1x.jpg 1x, main-bridge-mobile@2x.jpg 2x" alt="Фото моста Дьявола">
+            </picture>
           </div>
         </section>
 

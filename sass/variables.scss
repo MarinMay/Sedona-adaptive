@@ -1,4 +1,4 @@
-$font-main: "Open sans", "Arial", sans-serif;
+$font-main: "PT sans", "Arial", "Helvetica", sans-serif;
 
 $tablet-width: 768px;
 $desktop-width: 1200px;
@@ -7,8 +7,16 @@ $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
 $color-main: #81b3d2;
-$font-color--main: #333333;
+$color-main--darker: #669ec0;
+$font-color: #333333;
+$font-color--reverse: #ffffff;
+$font-color--reverse-opacity-30: rgba(255, 255, 255, 0.3);
+$font-color--title: #000000;
+$font-color--hover: #81b3d2;
+$font-color--down: rgba(0, 0, 0, 0.3);
+$font-color--active-menu: #766357;
+$font-color--active-menu-hover: #604e43;
+$font-color--active-menu-down: rgba(118, 99, 87, 0.3);
 $color-secondary: #ffffff;
-$color-secondary-opacity-30: rgba(255, 255, 255, 0.3);
-$color-title: #000000;
-$color-active-menu: #766357;
+
+
