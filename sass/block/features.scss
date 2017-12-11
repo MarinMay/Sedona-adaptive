@@ -37,7 +37,7 @@
 }
 
 .features__text-wrapper {
-  padding-botom: 25px;
+  padding-bottom: 24px;
 
   @media (min-width: 530px) {
     width: 50%;
@@ -79,6 +79,14 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .features--reverse {
+    .features__text {
+      width: 59%;
+    }
+  }
+}
+
 .features__photo {
   line-height: 0;
 
@@ -86,6 +94,10 @@
     width: 100%;
     object-fit: cover;
     max-height: 260px;
+
+    @media (min-width: $desktop-width) {
+      max-height: 256px;
+    }
   }
 
   @media (min-width: 530px) {
