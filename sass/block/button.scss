@@ -1,0 +1,14 @@
+.button {
+  display: block;
+  min-height: 58px;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $font-color--reverse;
+  background-color: $color-main;
+  border: none;
+}

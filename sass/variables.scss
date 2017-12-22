@@ -6,17 +6,25 @@ $desktop-width: 1200px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
-$color-main: #81b3d2;
+$blue: #81b3d2;
+$black: #000000;
+$black-opacity-30: rgba(0, 0, 0, 0.3);
+$white: #ffffff;
+$dark-gray: #333333;
+$gray-light: #eeeeee;
+$gray: #d6d6d6;
+
+$color-main: $blue;
 $color-main--darker: #669ec0;
-$font-color: #333333;
-$font-color--reverse: #ffffff;
+$font-color: $dark-gray;
+$font-color--reverse: $white;
 $font-color--reverse-opacity-30: rgba(255, 255, 255, 0.3);
-$font-color--title: #000000;
-$font-color--hover: #81b3d2;
-$font-color--down: rgba(0, 0, 0, 0.3);
+$font-color--title: $black;
+$font-color--hover: $blue;
+$font-color--down: $black-opacity-30;
 $font-color--active-menu: #766357;
 $font-color--active-menu-hover: #604e43;
 $font-color--active-menu-down: rgba(118, 99, 87, 0.3);
-$color-secondary: #ffffff;
+$color-secondary: $white;
 
 
