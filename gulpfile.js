@@ -7,7 +7,8 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
-
+var rename = require("gulp-rename");
+var svgstore = require("gulp-svgstore");
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -41,3 +42,11 @@ gulp.task("build",function(done) {
   );
 });
 
+gulp.task("sprite", function() {
+  return gulp.src("img/s-*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("img"));
+});

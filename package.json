@@ -31,5 +31,7 @@
     "img/**/*.svg",
     "sass/**/*.sass"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "gulp-rename": "^1.2.2"
+  }
 }

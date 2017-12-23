@@ -1,0 +1,44 @@
+.social__list {
+  @include list-style-reset;
+  margin-bottom: 40px;
+  padding: 0 20%;
+  font-size: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.social__item {
+  display: inline-block;
+  margin-bottom: 5px;
+  vertical-align: top;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+  background-color: $color-main;
+}
+
+.social__icon {
+  fill: $font-color--reverse;
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: $color-main--darker;
+}
+
+.social__link:active {
+  .social__icon {
+    fill: $font-color--reverse-opacity-30;
+  }
+}

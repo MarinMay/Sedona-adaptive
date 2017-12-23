@@ -1,0 +1,44 @@
+.copyright {
+  line-height: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 60px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 44px;
+  }
+}
+
+.copyright__text {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+  color: $font-color--title;
+}
+
+.copyright__icon {
+  fill: $font-color--title;
+  pointer-events: none;
+}
+
+.copyright__link {
+  display: inline-block;
+  height: 34px;
+
+  &:hover,
+  &:focus {
+    .copyright__icon {
+      fill: $font-color--hover;
+    }
+  }
+
+  &:active {
+  .copyright__icon {
+      fill: $font-color--down;
+    }
+  }
+}
+
+
