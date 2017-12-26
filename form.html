@@ -88,17 +88,17 @@
           Оставьте свой отзыв
         </h1>
 
-        <p class="page-main__description">
+        <p class="page-main__description page-main__description--form">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
 
         <form class="form-review" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="form-review__impression impression">
+          <fieldset class="form-review__item form-review__item--impression impression">
             <div class="form-review__caption">Ваше общее впечатление:</div>
 
             <ul class="impression__list">
               <li class="impression__item">
-                <input class="impression__input" type="radio" name="impression" value="positive" id="positive">
+                <input class="impression__input visually-hidden" type="radio" name="impression" value="positive" id="positive" checked>
 
                 <label class="impression__label" for="positive">
                   Скорее положительное
@@ -106,7 +106,7 @@
               </li>
 
               <li class="impression__item">
-                <input class="impression__input" type="radio" name="impression" value="negative" id="negative">
+                <input class="impression__input visually-hidden" type="radio" name="impression" value="negative" id="negative">
 
                 <label class="impression__label" for="negative">
                   Скорее отрицательное
@@ -114,7 +114,7 @@
               </li>
 
               <li class="impression__item">
-                <input class="impression__input" type="radio" name="impression" value="difficult" id="difficult">
+                <input class="impression__input visually-hidden" type="radio" name="impression" value="difficult" id="difficult">
 
                 <label class="impression__label" for="difficult">
                   Затрудняюсь ответить
@@ -123,67 +123,76 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form-review__name name">
+          <fieldset class="form-review__item form-review__item--name name">
             <div class="form-review__caption">Представьтесь:</div>
 
-            <label class="name__label">
-              Имя<sup>*</sup>
+            <div class="name__label">
+              <span class="name__caption">Имя*:</span>
               <input class="name__input" type="text" name="name" placeholder="Петр" required>
-            </label>
+            </div>
 
-            <label class="name__label">
-              Фамилия<sup>*</sup>
+            <div class="name__label">
+              <span class="name__caption">Фамилия*:</span>
               <input class="name__input" type="text" name="surname" placeholder="Иванов" required>
-            </label>
+            </div>
 
-            <label class="name__label">
-              Отчество
+            <div class="name__label">
+              <span class="name__caption">Отчество:</span>
               <input class="name__input" type="text" name="patronymic" placeholder="Александрович">
-            </label>
+            </div>
           </fieldset>
 
-          <fieldset class="form-review__contact user-contact">
-            <div class="form-review__caption">Контактная информация:</div>
+          <fieldset class="form-review__item form-review__item--contact user-contact">
+            <div class="form-review__caption form-review__caption--displacement">Контактная информация:</div>
 
-            <label class="user-contact__label">Контактный телефон<sup>*</sup>:
-              <input class="user-contact__input" type="tel" name="phone" plaseholder="Введите телефон" required>
-            </label>
+            <div class="user-contact__inner">
+              <label class="user-contact__label">
+                <span class="user-contact__caption"><span class="user-contact__desctop-hidden">Контактный</span> телефон*:</span>
 
-            <label class="user-contact__label">Электронная почта<sup>*</sup>:
-              <input class="user-contact__input" type="email" name="email" plaseholder="Введите e-mail" required>
-            </label>
+                <input class="user-contact__input" type="tel" name="phone" placeholder="Введите телефон" required>
+                <span class="user-contact__icon user-contact__icon--phone"></span>
+              </label>
+
+              <label class="user-contact__label">
+                <span class="user-contact__caption">Электронная почта*:</span>
+
+                <input class="user-contact__input" type="email" name="email" placeholder="Введите e-mail" required>
+
+                <span class="user-contact__icon user-contact__icon--email"></span>
+              </label>
+            </div>
           </fieldset>
 
-          <fieldset class="form-review__attraction attraction">
-            <div class="form-review__caption">Посещенные достопримечательности:</div>
+          <fieldset class="form-review__item form-review__item--attraction attraction">
+            <div class="form-review__caption form-review__caption--displacement">Посещенные достопримечательности:</div>
 
             <ul class="attraction__list">
-              <li class="attraction__item">
-                <input class="attraction__input" type="checkbox" name="devil's-bridge" id="devil's-bridge">
+              <li class="attraction__item attraction__item--brige">
+                <input class="attraction__input visually-hidden" type="checkbox" name="devil's-bridge" id="devil's-bridge" checked>
 
                 <label class="attraction__label" for="devil's-bridge">
                   Мост Дьявола
                 </label>
               </li>
 
-              <li class="attraction__item">
-                <input class="attraction__input" type="checkbox" name="mountain" id="mountain">
+              <li class="attraction__item attraction__item--bell">
+                <input class="attraction__input visually-hidden" type="checkbox" name="mountain" id="mountain">
 
                 <label class="attraction__label" for="mountain">
                   Гора-Колокол
                 </label>
               </li>
 
-              <li class="attraction__item">
-                <input class="attraction__input" type="checkbox" name="slide-park" id="slide-park">
+              <li class="attraction__item attraction__item--park">
+                <input class="attraction__input visually-hidden" type="checkbox" name="slide-park" id="slide-park" checked>
 
                 <label class="attraction__label" for="slide-park">
                   Слайд-парк
                 </label>
               </li>
 
-              <li class="attraction__item">
-                <input class="attraction__input" type="checkbox" name="red-rocks" id="red-rocks">
+              <li class="attraction__item attraction__item--rocks">
+                <input class="attraction__input visually-hidden" type="checkbox" name="red-rocks" id="red-rocks" checked>
 
                 <label class="attraction__label" for="red-rocks">
                   Красные скалы
@@ -192,18 +201,19 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form-review__emotion emotion">
-            <div class="form-review__caption">Опишите свои эмоции:</div>
+          <fieldset class="form-review__item form-review__item--emotion emotion">
+            <div class="form-review__caption form-review__caption--displacement">Опишите свои эмоции:</div>
 
-            <textarea class="emotion__area" name="describe-emotion" placeholder="Опишите подробно все свои восторги">
-            </textarea>
+            <textarea class="emotion__area" name="describe-emotion" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
 
-          <button type="submit">
-            Отправить отзыв
-          </button>
+          <div class="form-review__button-wrapper">
+            <button class="button form-review__button" type="submit">
+              Отправить отзыв
+            </button>
 
-          <span class="form-review__footnote mobile-hidden"><sup>*</sup> &#8212; обязательные поля</span>
+            <span class="form-review__footnote">* &#8212; обязательные поля</span>
+          </div>
         </form>
       </main>
 
@@ -259,5 +269,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>

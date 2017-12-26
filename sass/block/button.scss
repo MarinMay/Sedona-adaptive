@@ -9,6 +9,20 @@
   font-weight: 700;
   text-transform: uppercase;
   color: $font-color--reverse;
-  background-color: $color-main;
+  background-color: $button-color;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $button-color--hover;
+  }
+
+  &:active {
+    color: $font-color--reverse-opacity-30;
+    background-color: $button-color--down;
+  }
+
+  &:disabled {
+    background-color: $gray-light--1;
+  }
 }

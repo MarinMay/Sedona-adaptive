@@ -1,0 +1,64 @@
+.impression {
+}
+
+.impression__list {
+  @include list-style-reset;
+  padding-top: 15px;
+  padding-left: 77px;
+  text-align: left;
+}
+
+.impression__item {
+  margin-bottom: 40px;
+}
+
+.impression__label {
+  position: relative;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: none;
+  color: $font-color--input;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: -77px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 17px solid $color-form-input;
+    background-color: $color-form-input;
+  }
+}
+
+.impression__input:checked + .impression__label::before {
+  border: 17px solid $color-form-input;
+  background-color: $font-color;
+  transition: background-color 0.3s linear;
+}
+
+.impression__input:hover + .impression__label::before{
+  border-color: $color-form-input--active;
+  background-color: $color-form-input--active;
+}
+
+.impression__input:active + .impression__label::before {
+  border-color: $color-form-input--down;
+  background-color: $color-form-input--down;
+}
+
+.impression__input:checked:hover + .impression__label::before{
+  border-color: $color-form-input--active;
+  background-color: $font-color;
+}
+
+.impression__input:checked:active + .impression__label::before {
+  border-color: $color-form-input--down;
+  background-color: $font-color;
+}
+
+.impression__input:disabled + .impression__label {
+  opacity: 0.6;
+}

@@ -33,9 +33,12 @@
   }
 
   &:hover,
-  &:focus,
+  &:focus {
+    background-color: $button-color--hover;
+  }
+
   &:active {
-    background-color: $color-main--darker;
+    background-color: $button-color--down;
   }
 
   @media (min-width: $tablet-width) {

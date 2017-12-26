@@ -1,0 +1,47 @@
+.like {
+  display: flex;
+  align-items: flex-end;
+  font-weight: 700;
+  color: $font-color--title;
+
+  @media (min-width: $desktop-width) {
+    color: $font-color--reverse;
+  }
+}
+
+.like__button {
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+  margin-right: 10px;
+  padding: 0;
+  vertical-align: bottom;
+  background-color: transparent;
+  border: none;
+
+  &:hover .photo__like-icon,
+  &:focus .photo__like-icon,
+  &:active .photo__like-icon {
+    fill: #000;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover .photo__like-icon,
+    &:focus .photo__like-icon,
+    &:active .photo__like-icon {
+      fill: $font-color--reverse;
+    }
+  }
+}
+
+.like__icon {
+  fill: #b2b2b2;
+
+  @media (min-width: $desktop-width) {
+    fill: $font-color--reverse;
+  }
+}
+
+.like__count {
+  line-height: 1;
+}
