@@ -43,8 +43,8 @@
     <div class="container">
       <header class="page-header">
         <nav class="main-nav">
-          <button class="button-burger" type="button">
-            <span class="button-burger__icon button-burger__icon--open"></span>
+          <button class="button-burger button-burger--no-js" type="button"><!--button-burger--no-js скрывает крестик, если js не работает-->
+            <span class="button-burger__icon"></span><!--button-burger__icon--open превращает гамбургер в крестик-->
 
             <span class="visually-hidden">Открывание и закрывание меню</span>
           </button>
@@ -271,5 +271,7 @@
     </div>
 
     <script src="js/picturefill.min.js"></script>
+
+    <script src="js/menu.js"></script>
   </body>
 </html>

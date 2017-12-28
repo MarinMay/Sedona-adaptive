@@ -13,6 +13,11 @@
   }
 }
 
+/*прячет кнопку без js*/
+.button-burger--no-js {
+  display: none;
+}
+
 /*гамбургер при закрытом меню*/
 .button-burger__icon {
   display: block;
