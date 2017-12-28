@@ -4,13 +4,25 @@
   display: flex;
   align-items: center;
   width: 100%;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .name__caption {
   margin-right: 14px;
   flex-grow: 0;
   flex-shrink: 1;
+
+  &--margin-right {
+    margin-right: 17px;
+  }
 }
 
 .name__input {
@@ -18,8 +30,8 @@
   flex-shrink: 1;
   width: 70%;
   height: 58px;
-  padding: 10px 20px;
-  font-size: 18px;
+  padding: 10px 17px;
+  font-size: 16px;
   line-height: 26px;
   font-weight: 700;
   text-transform: none;

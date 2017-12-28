@@ -6,13 +6,17 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     max-width: 1152px;
-    padding: 0 8%;
+    padding: 25px 8% 0;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 7px;
   }
 }
 
 .form-review__caption {
-  margin: 20px 0 15px;
+  margin: 18px 0 22px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -20,6 +24,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+
+    &--align-left {
+      text-align: left;
+      margin: 0 0 58px;
+    }
   }
 }
 
@@ -48,7 +57,16 @@
 .form-review__item--impression {
   @media (min-width: $tablet-width) {
     width: 50%;
+    margin-right: 8.8%;
     border-top: none;
+    border-right: 1px solid $color-border;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 8.2%;
+    .form-review__caption {
+      padding-left: 80px;
+    }
   }
 }
 
@@ -59,7 +77,7 @@
 
   @media (min-width: $tablet-width) {
     order: 0;
-    width: 50%;
+    width: 41%;
     margin: 0;
     border: none;
   }
@@ -71,17 +89,17 @@
   @media (min-width: $tablet-width) {
     order: 0;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 80px;
   }
 }
 
 .form-review__item--attraction {
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-top: 60px;
+    margin-top: 36px;
 
     .form-review__caption--displacement {
-      margin-top: -20px;
+      margin-top: -26px;
     }
   }
 }
@@ -91,7 +109,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-top: 60px;
+    margin-top: 32px;
   }
 }
 
@@ -103,16 +121,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 25px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
   }
 }
 
 .form-review__button {
   width: 100%;
-  margin: 46px 0 40px 0;
+  margin: 46px 0 43px 0;
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    margin-top: 52px;
   }
 }
 
@@ -121,5 +145,7 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
+    margin-top: 14px;
+    vertical-align: middle;
   }
 }

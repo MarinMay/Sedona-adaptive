@@ -3,13 +3,31 @@
 
 .impression__list {
   @include list-style-reset;
-  padding-top: 15px;
-  padding-left: 77px;
+  padding-top: 14px;
+  padding-left: 79px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 14px;
+    padding-left: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
+    padding-left: 80px;
+  }
 }
 
 .impression__item {
-  margin-bottom: 40px;
+  margin-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+
+    &:last-child {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .impression__label {
@@ -23,13 +41,18 @@
   &::before {
     content: "";
     position: absolute;
-    top: -13px;
-    left: -77px;
+    top: -14px;
+    left: -78px;
     width: 56px;
     height: 56px;
     border-radius: 50%;
     border: 17px solid $color-form-input;
     background-color: $color-form-input;
+
+    @media (min-width: $tablet-width) {
+      top: -16px;
+      left: -75px;
+    }
   }
 }
 

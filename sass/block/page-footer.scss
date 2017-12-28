@@ -1,8 +1,8 @@
 .page-footer {
   @media (min-width: $tablet-width) {
     display: flex;
-    padding: 36px 0;
-    align-items: center;
+    padding: 29px 0 36px;
+    align-items: flex-start;
   }
 }
 
@@ -13,16 +13,21 @@
 }
 
 .page-footer__item--text {
-  margin: 35px auto;
+  margin: 29px auto 36px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 10px 0 0 0;
   }
 }
 
+.page-footer__item--copyright {
+  @media (min-width: $tablet-width) {
+    margin-top: 7px;
+  }
+}
 .page-footer__link {
   margin: 35px auto;
   font-size: 21px;

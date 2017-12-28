@@ -6,33 +6,51 @@
   @include list-style-reset;
   display: flex;
   flex-direction: column;
-  padding-top: 15px;
+  padding-top: 10px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 36px 5% 0 14.2%;
+  }
+
+  @media (min-width: 800px) {
     justify-content: space-between;
-    padding-left: 14%;
-    padding-right: 14%;
+    padding-left: 16%;
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: space-between;
     padding-left: 0%;
     padding-right: 0%;
   }
 }
 
 .attraction__item {
-  margin-bottom: 60px;
-  padding-left: 77px;
+  margin-bottom: 54px;
+  padding-left: 79px;
+
+  &:last-child {
+    margin-bottom: 41px;
+  }
 
   @media (min-width: $tablet-width) {
-    width: 40%;
+    width: 42%;
+    margin-right: 7.4%;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: 800px) {
+    &:nth-child(2n){
+      margin-right: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
+    margin-right: 5px;
   }
 }
 
@@ -70,11 +88,15 @@
     content: "";
     position: absolute;
     top: -13px;
-    left: -77px;
+    left: -79px;
     width: 56px;
     height: 56px;
-    border-radius: 8%;
+    border-radius: 12%;
     background-color: $color-form-input;
+
+    @media (min-width: $tablet-width) {
+      top: -16px;
+    }
   }
 }
 

@@ -4,6 +4,10 @@
   font-weight: 700;
   color: $font-color--title;
 
+  @media (min-width: $tablet-width) {
+    min-width: 65px;
+  }
+
   @media (min-width: $desktop-width) {
     color: $font-color--reverse;
   }
@@ -13,7 +17,7 @@
   display: inline-block;
   width: 22px;
   height: 20px;
-  margin-right: 10px;
+  margin-right: 15px;
   padding: 0;
   vertical-align: bottom;
   background-color: transparent;
@@ -23,6 +27,10 @@
   &:focus .photo__like-icon,
   &:active .photo__like-icon {
     fill: #000;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
   }
 
   @media (min-width: $desktop-width) {

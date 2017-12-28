@@ -94,7 +94,7 @@
 
         <form class="form-review" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="form-review__item form-review__item--impression impression">
-            <div class="form-review__caption">Ваше общее впечатление:</div>
+            <div class="form-review__caption form-review__caption--align-left">Ваше общее впечатление:</div>
 
             <ul class="impression__list">
               <li class="impression__item">
@@ -124,7 +124,7 @@
           </fieldset>
 
           <fieldset class="form-review__item form-review__item--name name">
-            <div class="form-review__caption">Представьтесь:</div>
+            <div class="form-review__caption form-review__caption--align-left">Представьтесь:</div>
 
             <div class="name__label">
               <span class="name__caption">Имя*:</span>
@@ -137,7 +137,7 @@
             </div>
 
             <div class="name__label">
-              <span class="name__caption">Отчество:</span>
+              <span class="name__caption name__caption--margin-right">Отчество:</span>
               <input class="name__input" type="text" name="patronymic" placeholder="Александрович">
             </div>
           </fieldset>
@@ -147,9 +147,9 @@
 
             <div class="user-contact__inner">
               <label class="user-contact__label">
-                <span class="user-contact__caption"><span class="user-contact__desctop-hidden">Контактный</span> телефон*:</span>
+                <span class="user-contact__caption"><span class="user-contact__desktop-hidden">Контактный</span> телефон*:</span>
 
-                <input class="user-contact__input" type="tel" name="phone" placeholder="Введите телефон" required>
+                <input class="user-contact__input user-contact__input--phone" type="tel" name="phone" placeholder="Введите телефон" required>
                 <span class="user-contact__icon user-contact__icon--phone"></span>
               </label>
 
@@ -212,7 +212,7 @@
               Отправить отзыв
             </button>
 
-            <span class="form-review__footnote">* &#8212; обязательные поля</span>
+            <span class="form-review__footnote">* &ndash; обязательные поля</span>
           </div>
         </form>
       </main>
