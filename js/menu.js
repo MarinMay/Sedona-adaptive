@@ -19,6 +19,7 @@ buttonBurger.addEventListener("click", function (evt) {
 
     //показываем пункты меню
     menu.classList.remove("main-nav__list--close");
+
   }
 
   //закрытое меню

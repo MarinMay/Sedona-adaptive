@@ -8,6 +8,9 @@
   line-height: 40px;
   font-weight: bold;
   background-color: $color-main;
+  transition-property: height;
+  transition-duration: 5s;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
