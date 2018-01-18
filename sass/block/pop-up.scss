@@ -10,6 +10,22 @@
   padding: 1px;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15),
     0 -1px 10px 0 rgba(0, 1, 1, 0.15);
+  background-color: #ffffff;
+}
+
+.pop-up--show {
+  display: block;
+  animation-name: show;
+  animation-duration: 1s;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .pop-up--error {

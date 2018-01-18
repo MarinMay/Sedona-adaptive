@@ -83,6 +83,16 @@
   }
 }
 
+//при ошибке заполнения поля
+.user-contact__input--error {
+  border-color: $color-error;
+  background-color: $color-error;
+}
+
+.user-contact__input--error + .user-contact__icon {
+  background-color: $color-error;
+}
+
 .user-contact__icon {
   position: absolute;
   bottom: 0;
