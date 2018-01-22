@@ -1,12 +1,13 @@
 .button-burger {
   position: absolute;
   top: 17px;
-  right: 20px;
-  width: 26px;
+  right: 23px;
+  width: 23px;
   height: 22px;
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -20,10 +21,11 @@
 
 /*гамбургер при закрытом меню*/
 .button-burger__icon {
+  position: relative;
   display: block;
-  width: 23px;
   height: 4px;
   background-color: $color-main;
+  transition: top 0.2s 0.2s, transform 0.2s;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -33,10 +35,12 @@
 .button-burger__icon::before,
 .button-burger__icon::after {
   content: "";
+  position: absolute;
   display: block;
-  width: 23px;
-  height: 4px;
+  width: 100%;
+  height: 100%;
   background-color: $color-main;
+  transition: top 0.2s 0.2s, transform 0.2s;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -44,17 +48,17 @@
 }
 
 .button-burger__icon::before {
-  transform: translateY(-8px);
+  top: -9px;
 }
 
 .button-burger__icon::after {
-  transform: translateY(4px);
+  top: 9px;
 }
 
 /*крестик при открытом меню*/
 .button-burger__icon--open {
-  width: 26px;
-  background-color: transparent;
+  transform: rotate(-45deg);
+  transition: top 0.2s, transform 0.2s 0.2s;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -62,8 +66,9 @@
 }
 
 .button-burger__icon--open::before {
-  width: 28px;
-  transform: translateY(0px) rotate(45deg);
+  top: 0;
+  transform: rotate(90deg);
+  transition: top 0.2s, transform 0.2s 0.2s;
   background-color: $color-secondary;
 
   @media (min-width: $tablet-width) {
@@ -72,8 +77,8 @@
 }
 
 .button-burger__icon--open::after {
-  width: 28px;
-  transform: translateY(-4px) rotate(-45deg);
+   top: 0;
+  transition: top 0.2s, transform 0.2s 0.2s;
   background-color: $color-secondary;
 
   @media (min-width: $tablet-width) {
