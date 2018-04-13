@@ -5,6 +5,7 @@
     <title>Sedona</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet">
+    <script src="js/picturefill.min.js"></script>
   </head>
 
   <body>
@@ -50,9 +51,9 @@
 
           <a class="main-nav__logo-link">
             <picture>
-              <source media="(min-width: 1200px" srcset="img/logo-sedona-desktop.svg">
+              <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
 
-              <img src="img/logo-sedona-tablet.svg" width="102" height="83" alt="Sedona logo">
+              <img srcset="img/logo-sedona-tablet.svg" width="102" height="83" alt="Sedona logo">
             </picture>
           </a>
         </nav>
@@ -188,7 +189,7 @@
         </section>
 
         <section class="map">
-          <h2 class="visually-hidden"></h2>
+          <h2 class="visually-hidden">Карта местности</h2>
 
           <div class="map__frame" id="map"></div>
         </section>
@@ -249,9 +250,7 @@
 
     <script src="js/menu.min.js"></script>
 
-    <script src="js/picturefill.min.js"></script>
-
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 
     <script src="js/map.min.js"></script>
   </body>
