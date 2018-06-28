@@ -7,7 +7,7 @@
 
 
 Опубликованная версия по адресу: 
-https://marinmay.github.io/Sedona-adaptive/
+https://mairiv.github.io/Sedona-adaptive/
 
 чтобы работать с проектом нужно установить зависимости  - npm i
 
